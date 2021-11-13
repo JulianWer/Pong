@@ -5,7 +5,6 @@ import javax.swing.JFrame;
 public class Main{
     public static void main(String[] args) throws Exception{
         
-        
         JFrame frame = new JFrame();
         demopanel panel = new demopanel();
         frame.addKeyListener(new keypress(panel));

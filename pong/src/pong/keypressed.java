@@ -27,12 +27,6 @@ class keypress extends KeyAdapter {
         }
         if (evt.getKeyCode() == KeyEvent.VK_SPACE) {
             panel.timer.start();
-        }
-        
-        
-        
-    }
-
-    
-    
+        }  
+    }  
 }

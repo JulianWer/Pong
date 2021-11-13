@@ -45,7 +45,7 @@ public class demopanel extends JPanel implements ActionListener{
         P1.y +=20;
         this.repaint();
     }
-
+    
     public void moveUpP2(){
         P2.y -=20;
         this.repaint();
