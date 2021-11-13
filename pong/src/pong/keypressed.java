@@ -2,11 +2,11 @@ package pong;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 
-class keypress extends KeyAdapter {
+class Key_pressed extends KeyAdapter {
 
     
-    demopanel panel;
-    public keypress(demopanel panel){
+    Panel panel;
+    public Key_pressed(Panel panel){
         this.panel = panel;
     }
 
