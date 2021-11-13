@@ -19,8 +19,10 @@ public class Panel extends JPanel implements ActionListener{
     int velx = 3;
     int counterP1 = 0;
     int counterP2 = 0;
+	private int in;
     
-    public Panel(){
+    public Panel(int input){
+    	this.in = input;
         timer.start();
     }
     public void paint(Graphics g){
@@ -84,7 +86,7 @@ public class Panel extends JPanel implements ActionListener{
                 
             }
 
-            if(counterP1 == 10 || counterP2 == 10){
+            if(counterP1 == this.in || counterP2 == this.in){
                 System.exit(1);
             }
             
