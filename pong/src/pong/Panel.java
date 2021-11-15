@@ -69,15 +69,16 @@ public class Panel extends JPanel implements ActionListener{
             vely = -vely;
         }
 
-        if(y>= P2.y && y<= P2.y+100 && x>= P2.x && x<= P2.x +20){
+        if(y>= P2.y && y<= P2.y+100 && x> P2.x-7.5 ){
         	counterRally ++;
             velx = -velx;
         }
-        if(y>= P1.y && y<= P1.y+100 && x<= P1.x+20 && x>= P1.x){
+        if(y>= P1.y && y<= P1.y+100 && x<= P1.x+20){
             velx = -velx;
         }
         if(x >= 800){
             counterP1 += howManyPoints;
+            counterRally = 0;
             colorChange = Color.WHITE;
             howManyPoints = 1;
             x = 400;
@@ -86,6 +87,7 @@ public class Panel extends JPanel implements ActionListener{
         }
         if(x <= 0){
             counterP2 += howManyPoints;
+            counterRally = 0;
             colorChange = Color.WHITE;
             howManyPoints = 1;
             x = 400;
@@ -98,9 +100,11 @@ public class Panel extends JPanel implements ActionListener{
             System.exit(1);
         }
         
-        if(counterRally >= 10) {
+        
+        if(counterRally >= 2) {
         	howManyPoints = 2;
         	colorChange = Color.RED;
+        	
         }
         
         
