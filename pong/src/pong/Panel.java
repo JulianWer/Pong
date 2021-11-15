@@ -60,53 +60,53 @@ public class Panel extends JPanel implements ActionListener{
         this.repaint();
     }
 
-    @Override
-        public void actionPerformed(ActionEvent e) {
-            if(y >= 375){
-                vely = -vely;
-            }
-            if(y <= 0){
-                vely = -vely;
-            }
-
-            if(y>= P2.y && y<= P2.y+100 && x>= P2.x && x<= P2.x +20){
-            	counterRally ++;
-                velx = -velx;
-            }
-            if(y>= P1.y && y<= P1.y+100 && x<= P1.x+20 && x>= P1.x){
-                velx = -velx;
-            }
-            if(x >= 800){
-                counterP1 += howManyPoints;
-                colorChange = Color.WHITE;
-                howManyPoints = 1;
-                x = 400;
-                y= 200;
-                timer.stop();
-            }
-            if(x <= 0){
-                counterP2 += howManyPoints;
-                colorChange = Color.WHITE;
-                howManyPoints = 1;
-                x = 400;
-                y= 200;
-                timer.stop();
-                
-            }
-
-            if(counterP1 == this.in || counterP2 == this.in){
-                System.exit(1);
-            }
-            
-            if(counterRally >= 10) {
-            	howManyPoints = 2;
-            	colorChange = Color.RED;
-            }
-            
-            
-            x = x + velx;
-            y = y +vely;
-            repaint();
+    
+    public void actionPerformed(ActionEvent e) {
+        if(y >= 375){
+            vely = -vely;
         }
+        if(y <= 0){
+            vely = -vely;
+        }
+
+        if(y>= P2.y && y<= P2.y+100 && x>= P2.x && x<= P2.x +20){
+        	counterRally ++;
+            velx = -velx;
+        }
+        if(y>= P1.y && y<= P1.y+100 && x<= P1.x+20 && x>= P1.x){
+            velx = -velx;
+        }
+        if(x >= 800){
+            counterP1 += howManyPoints;
+            colorChange = Color.WHITE;
+            howManyPoints = 1;
+            x = 400;
+            y= 200;
+            timer.stop();
+        }
+        if(x <= 0){
+            counterP2 += howManyPoints;
+            colorChange = Color.WHITE;
+            howManyPoints = 1;
+            x = 400;
+            y= 200;
+            timer.stop();
+            
+        }
+
+        if(counterP1 == this.in || counterP2 == this.in){
+            System.exit(1);
+        }
+        
+        if(counterRally >= 10) {
+        	howManyPoints = 2;
+        	colorChange = Color.RED;
+        }
+        
+        
+        x = x + velx;
+        y = y +vely;
+        repaint();
+    }
     
 }
