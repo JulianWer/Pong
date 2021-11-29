@@ -37,8 +37,8 @@ public class Panel extends JPanel implements ActionListener{
         g.setColor(colorChange);
         ball.draw(g);
         g.setFont(new Font("SansSerif", Font.PLAIN, 20));
-        g.drawString(String.valueOf(counterP1), 200, 100);
-        g.drawString(String.valueOf(counterP2), 600, 100);
+        g.drawString(String.valueOf(ball.counterP1), 200, 100);
+        g.drawString(String.valueOf(ball.counterP2), 600, 100);
         
 
     }
