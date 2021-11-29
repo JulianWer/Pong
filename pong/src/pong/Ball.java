@@ -7,6 +7,7 @@ import java.awt.Rectangle;
 import javax.swing.Timer;
 
 public class Ball {
+	
 	 int x = 400;
 	 int y = 200;
 	 int vely = 3;
@@ -18,24 +19,31 @@ public class Ball {
 	 Color colorChange = Color.WHITE;
 	 
 	public void draw(Graphics g) {
+		//draw ball
 		g.fillOval(x, y, 15, 15);
+		
 	}
 	    
 	public void movement(Rectangle P1, Rectangle P2, Timer timer, int in) {
+		//collision
 		if(y >= 375){
             vely = -vely;
         }
+		
         if(y <= 0){
             vely = -vely;
         }
 
-        if(y>= P2.y && y<= P2.y+100 && x> P2.x-17.5 ){
+        if(y>= P2.y && y<= P2.y+100 && x+15> P2.x ){
         	counterRally ++;
             velx = -velx;
         }
+        
         if(y>= P1.y && y<= P1.y+100 && x<= P1.x+17.5){
             velx = -velx;
         }
+        
+        //reset and count points
         if(x >= 800){
             counterP1 += howManyPoints;
             counterRally = 0;
@@ -45,6 +53,7 @@ public class Ball {
             y= 200;
             timer.stop();
         }
+        
         if(x <= 0){
             counterP2 += howManyPoints;
             counterRally = 0;
@@ -67,7 +76,7 @@ public class Ball {
         	
         }
         
-        
+        // x and y velocity 
         x = x + velx;
         y = y +vely;
 		
