@@ -17,7 +17,7 @@ public class Ball {
 	 int howManyPoints = 1;
 	 Color colorChange = Color.WHITE;
 	 
-	public Ball(Graphics g) {
+	public void draw(Graphics g) {
 		g.fillOval(x, y, 15, 15);
 	}
 	    

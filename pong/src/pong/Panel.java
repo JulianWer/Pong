@@ -12,6 +12,7 @@ public class Panel extends JPanel implements ActionListener{
     Rectangle P1 = new Rectangle(20,200,30,100);
     Rectangle P2 = new Rectangle(750,200,30,100);
     Timer timer = new Timer(10,this);
+    Ball ball = new Ball();
     
    
     int x = 400;
@@ -34,7 +35,7 @@ public class Panel extends JPanel implements ActionListener{
         g.fillRect(P1.x, P1.y, 20, 100);
         g.fillRect(P2.x, P2.y, 20, 100);
         g.setColor(colorChange);
-        Ball ball = new Ball(g);
+        ball.draw(g);
         g.setFont(new Font("SansSerif", Font.PLAIN, 20));
         g.drawString(String.valueOf(counterP1), 200, 100);
         g.drawString(String.valueOf(counterP2), 600, 100);
@@ -62,7 +63,7 @@ public class Panel extends JPanel implements ActionListener{
 
     
     public void actionPerformed(ActionEvent e) {
-        //ball.movement(P1, P2, timer, this.in);
+        ball.movement(P1, P2, timer, this.in);
         repaint();
     }
     
