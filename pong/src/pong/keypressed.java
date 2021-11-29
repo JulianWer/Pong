@@ -10,7 +10,6 @@ class Key_pressed extends KeyAdapter {
         this.panel = panel;
     }
 
-    
     public void keyPressed(KeyEvent evt) {
 
         if (evt.getKeyChar() == 's') {
