@@ -8,14 +8,14 @@ import javax.swing.Timer;
 
 public class Ball {
 	
-	 int x = 400;
-	 int y = 200;
-	 int vely = 3;
-	 int velx = 3;
-	 int counterP1 = 0;
-	 int counterP2 = 0;
-	 int counterRally = 0;
-	 int howManyPoints = 1;
+	 private int x = 400;
+	 private int y = 200;
+	 private int vely = 3;
+	 private int velx = 3;
+	 public static int counterP1 = 0;
+	 public static int counterP2 = 0;
+	 public static int counterRally = 0;
+	 public static int howManyPoints = 1;
 	 Color colorChange = Color.WHITE;
 	 
 	public void draw(Graphics g) {
