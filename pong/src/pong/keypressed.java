@@ -13,7 +13,7 @@ class Key_pressed extends KeyAdapter {
     }
     // event 
     public void keyPressed(KeyEvent evt) {
-
+    	//für Buchstaben 
         switch(evt.getKeyChar()) {
         
         case 's':
@@ -24,7 +24,7 @@ class Key_pressed extends KeyAdapter {
         	panel.moveUpP1();
         	break;
         }
-        
+        //für pfeiltasten
         switch(evt.getKeyCode() ) {
         
         case KeyEvent.VK_DOWN:

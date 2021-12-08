@@ -17,21 +17,22 @@ public class Panel extends JPanel implements ActionListener{
     private Ball ball = new Ball();
     
     //attributes
-	private int in;
-    
+	private int input;
+    private static final Color BLACK = Color.BLACK;
+    private static final Color WHITE = Color.WHITE;
     public Panel(int input){
-    	this.in = input;
+    	this.input = input;
     }
     
     public void paint(Graphics g){
     	//drawing the game
-        this.setBackground(Color.BLACK);
-        g.setColor(Color.WHITE);
+        this.setBackground(BLACK);
+        g.setColor(WHITE);
         g.fillRect(P1.x, P1.y, 20, 100);
         g.fillRect(P2.x, P2.y, 20, 100);
         g.setColor(Ball.colorChange);
         ball.draw(g);
-        g.setColor(Color.WHITE);
+        g.setColor(WHITE);
         g.setFont(new Font("SansSerif", Font.PLAIN, 20));
         g.drawString(String.valueOf(Ball.counterP1), 200, 100);
         g.drawString(String.valueOf(Ball.counterP2), 600, 100);
@@ -61,7 +62,7 @@ public class Panel extends JPanel implements ActionListener{
     
     //animation of the ball
     public void actionPerformed(ActionEvent e) {
-        ball.movement(P1, P2, timer, this.in);
+        ball.movement(P1, P2, timer, this.input);
         repaint();
     }
     
