@@ -1,7 +1,5 @@
 package pong;
 
-import java.util.Scanner;
-
 import javax.swing.JFrame;
 
 
@@ -13,7 +11,6 @@ public class Main{
     	int input = ui.getInput();
         
     	//Game
-    	
         JFrame frame = new JFrame();
         Panel panel = new Panel(input);
         frame.addKeyListener(new Key_pressed(panel));

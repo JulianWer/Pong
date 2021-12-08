@@ -6,9 +6,11 @@ public class UI {
 	
 	private Scanner sc = new Scanner(System.in);
 	private int input;
+	
 	public UI() {
 		this.ask();
 	}
+	
 	public void ask() {
 	System.out.println("Welcome to Pong!");
 	System.out.println("Player one controls the bat with 'w' and 's '  \nPlayer two controls the bat with 'UP' and 'DOWN'");
@@ -17,6 +19,7 @@ public class UI {
 	input = sc.nextInt();
 	sc.close();
 	}
+	
 	public int getInput() {
 		return input;
 	}

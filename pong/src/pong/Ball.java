@@ -16,15 +16,15 @@ public class Ball {
 	 public static int counterP2 = 0;
 	 public static int counterRally = 0;
 	 public static int howManyPoints = 1;
-	 Color colorChange = Color.WHITE;
+	 static Color colorChange = Color.WHITE;
 	 
 	public void draw(Graphics g) {
 		//draw ball
 		g.fillOval(x, y, 15, 15);
-		
 	}
 	    
 	public void movement(Rectangle P1, Rectangle P2, Timer timer, int in) {
+		
 		//collision
 		if(y >= 375){
             vely = -vely;
@@ -61,8 +61,7 @@ public class Ball {
             howManyPoints = 1;
             x = 400;
             y= 200;
-            timer.stop();
-            
+            timer.stop(); 
         }
 
         if(counterP1 == in || counterP2 == in){
@@ -73,7 +72,6 @@ public class Ball {
         if(counterRally >= 2) {
         	howManyPoints = 2;
         	colorChange = Color.RED;
-        	
         }
         
         // x and y velocity 
