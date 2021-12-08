@@ -3,34 +3,41 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 
 class Key_pressed extends KeyAdapter {
-
+	
+	//obj
+    private Panel panel;
     
-    Panel panel;
-    
+    //Konstruktor
     public Key_pressed(Panel panel){
         this.panel = panel;
     }
-
+    // event 
     public void keyPressed(KeyEvent evt) {
 
-        if (evt.getKeyChar() == 's') {
-            panel.moveDownP1();
+        switch(evt.getKeyChar()) {
+        
+        case 's':
+        	panel.moveDownP1();
+        	break;
+        	
+        case 'w':
+        	panel.moveUpP1();
+        	break;
         }
         
-        if (evt.getKeyChar() == 'w') {
-            panel.moveUpP1();
-        }
+        switch(evt.getKeyCode() ) {
         
-        if (evt.getKeyCode() == KeyEvent.VK_DOWN) {
-            panel.moveDownP2();
+        case KeyEvent.VK_DOWN:
+        	panel.moveDownP2();
+        	break;
+        	
+        case KeyEvent.VK_UP:
+        	panel.moveUpP2();
+        	break;
+        	
+        case KeyEvent.VK_SPACE:
+        	panel.timer.start();
+        	break;
         }
-        
-        if (evt.getKeyCode() == KeyEvent.VK_UP) {
-            panel.moveUpP2();
-        }
-        
-        if (evt.getKeyCode() == KeyEvent.VK_SPACE) {
-            panel.timer.start();
-        } 
     }  
 }

@@ -9,11 +9,12 @@ import java.awt.*;
 public class Panel extends JPanel implements ActionListener{
  
 	private static final long serialVersionUID = 1L;
+	
 	//Objects
-    Rectangle P1 = new Rectangle(20,200,30,100);
-    Rectangle P2 = new Rectangle(750,200,30,100);
-    Timer timer = new Timer(10,this);
-    Ball ball = new Ball();
+    private Rectangle P1 = new Rectangle(20,200,30,100);
+    private Rectangle P2 = new Rectangle(750,200,30,100);
+    public Timer timer = new Timer(10,this);
+    private Ball ball = new Ball();
     
     //attributes
 	private int in;
@@ -36,7 +37,8 @@ public class Panel extends JPanel implements ActionListener{
         g.drawString(String.valueOf(Ball.counterP2), 600, 100);
       
     }
-    //Player movement
+
+	//Player movement
     public void moveUpP1(){
         P1.y -=20;
         this.repaint();
