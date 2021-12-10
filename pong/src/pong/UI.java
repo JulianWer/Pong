@@ -10,10 +10,7 @@ import java.util.Scanner;
 import javax.swing.*;
 
 public class UI extends JFrame {
-	
-	
 
-	private Scanner sc = new Scanner(System.in);
 	private int input;
 
 	
@@ -22,35 +19,39 @@ public class UI extends JFrame {
 	}
 	
 	public void ask() {
+		getContentPane().setBackground(Color.lightGray);
 
 		JLabel label = new JLabel("Bis zu welchem Punktestand soll das Spiel gehen?");
+		label.setFont(new Font("SansSerif", Font.PLAIN, 15));
 		label.setBounds(30,50, 400,40);
     	JTextField txt = new JTextField();
     	//set size of the text box
     	txt.setBounds(50, 100, 200, 40);
     	JButton button = new JButton("play");
+		button.setBackground(Color.BLACK);
+		//button.setForeground(Color.GRAY);
 		button.setBounds(250, 100, 70, 40);
     	add(txt);
     	add(button);
+		getRootPane().setDefaultButton(button);
 		add(label);
-		addKeyListener(new UIkeypressed());
     	bAction(button,txt);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	setSize(400,200);
+
 		setLocationRelativeTo(null);
     	setLayout(null);
     	setVisible(true);
+
 	}
 
 	public void bAction(JButton button, JTextField txt){
 		button.addActionListener(e -> {
 			//your actions
 			input = Integer.parseInt(txt.getText());
-			System.out.println(input);
 			//Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
 
 		});
 	}
-
-
 }
