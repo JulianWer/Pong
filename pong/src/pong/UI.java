@@ -22,7 +22,7 @@ public class UI {
 	
 	public int getInput() {
 		return input;
-		//2
+		
 	}
 	
 }
