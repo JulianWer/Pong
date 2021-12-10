@@ -41,3 +41,15 @@ class Key_pressed extends KeyAdapter {
         }
     }  
 }
+
+class UIkeypressed extends KeyAdapter {
+
+    // event
+    public void keyPressed(KeyEvent evt) {
+        //für pfeiltasten
+        if(evt.getKeyCode() == KeyEvent.VK_UP) {
+            System.out.println("hallo");
+        }
+    }
+}
+
