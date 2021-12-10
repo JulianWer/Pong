@@ -10,6 +10,7 @@ public class Main{
     	UI ui = new UI();
     	int input = ui.getInput();
         
+    	
     	//Game
         JFrame frame = new JFrame();
         Panel panel = new Panel(input);
