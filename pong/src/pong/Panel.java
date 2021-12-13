@@ -23,8 +23,10 @@ public class Panel extends JPanel implements ActionListener{
     public Panel(int input){
     	this.input = input;
     }
-    
-    public void paint(Graphics g){
+
+    @Override
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
     	//drawing the game
         this.setBackground(BLACK);
         g.setColor(WHITE);

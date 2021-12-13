@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="changes in UI (format)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/pong/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/pong/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/pong/keypressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/pong/keypressed.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,10 +99,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="transfer to intellij." />
     <MESSAGE value="changes in UI (format)" />
     <option name="LAST_COMMIT_MESSAGE" value="changes in UI (format)" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pong$Main.ic" NAME="Main Coverage Results" MODIFIED="1639396857432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pong.*</FILTER>
+    </SUITE>
   </component>
 </project>

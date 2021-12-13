@@ -17,30 +17,15 @@ class Key_pressed extends KeyAdapter {
     // event 
     public void keyPressed(KeyEvent evt) {
     	//für Buchstaben 
-        switch(evt.getKeyChar()) {
-        
-        case 's':
-        	panel.moveDownP1();
-        	break;
-        	
-        case 'w':
-        	panel.moveUpP1();
-        	break;
+        switch (evt.getKeyChar()) {
+            case 's' -> panel.moveDownP1();
+            case 'w' -> panel.moveUpP1();
         }
         //für pfeiltasten
-        switch(evt.getKeyCode() ) {
-        
-        case KeyEvent.VK_DOWN:
-        	panel.moveDownP2();
-        	break;
-        	
-        case KeyEvent.VK_UP:
-        	panel.moveUpP2();
-        	break;
-        	
-        case KeyEvent.VK_SPACE:
-        	panel.timer.start();
-        	break;
+        switch (evt.getKeyCode()) {
+            case KeyEvent.VK_DOWN -> panel.moveDownP2();
+            case KeyEvent.VK_UP -> panel.moveUpP2();
+            case KeyEvent.VK_SPACE -> panel.timer.start();
         }
     }  
 }
