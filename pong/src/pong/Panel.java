@@ -8,16 +8,16 @@ import java.awt.*;
 
 public class Panel extends JPanel implements ActionListener{
  
-	private static final long serialVersionUID = 1L;
+	//private static final long serialVersionUID = 1L;
 	
 	//Objects
     private Rectangle P1 = new Rectangle(20,200,30,100);
     private Rectangle P2 = new Rectangle(750,200,30,100);
     public Timer timer = new Timer(10,this);
-    private Ball ball = new Ball();
+    private final Ball ball = new Ball();
     
     //attributes
-	private int input;
+	private final int input;
     private static final Color BLACK = Color.BLACK;
     private static final Color WHITE = Color.WHITE;
     public Panel(int input){
