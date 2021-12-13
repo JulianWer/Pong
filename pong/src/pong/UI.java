@@ -51,7 +51,7 @@ public class UI extends JFrame {
 			input = Integer.parseInt(txt.getText());
 			//Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
-
+			setVisible(false);
 		});
 	}
 }
