@@ -24,7 +24,6 @@ public class Key_pressed extends KeyAdapter {
         switch (evt.getKeyCode()) {
             case KeyEvent.VK_DOWN -> panel.moveDownP2();
             case KeyEvent.VK_UP -> panel.moveUpP2();
-
         }
     }  
 }

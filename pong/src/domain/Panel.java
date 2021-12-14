@@ -24,6 +24,7 @@ public class Panel extends JPanel implements ActionListener{
     public Panel(int input){
     	this.input = input;
         this.timer.start();
+
     }
 
     @Override
@@ -41,7 +42,7 @@ public class Panel extends JPanel implements ActionListener{
         g.setFont(new Font("SansSerif", Font.PLAIN, 20));
         g.drawString(String.valueOf(Ball.counterP1), 200, 100);
         g.drawString(String.valueOf(Ball.counterP2), 600, 100);
-      
+
     }
 
 	//Player movement
@@ -69,6 +70,7 @@ public class Panel extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         ball.movement(P1, P2, timer, this.input);
         repaint();
+
     }
     
 }

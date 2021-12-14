@@ -1,5 +1,6 @@
 package ui;
 
+import domain.Ball;
 import domain.Panel;
 import domain.Key_pressed;
 
@@ -14,7 +15,9 @@ public class Game extends  JFrame{
 
 	public void game(int input) {
     	setTitle("Pong game");
+		Ball ball = new Ball();
 		Panel panel = new Panel(input);
+
 		addKeyListener(new Key_pressed(panel));
 		add(panel);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -1,5 +1,6 @@
 package ui;
 
+import domain.Ball;
 import persistence.PersistenceService;
 
 import java.awt.*;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 public class UI extends JFrame implements Serializable {
-
+	private Ball ball = new Ball();
 	private int input;
 	private  PersistenceService ps = new PersistenceService();
 
@@ -37,7 +38,10 @@ public class UI extends JFrame implements Serializable {
 		plyr2.setBounds(200, 200, 100, 40);
 
 		JButton button = new JButton("play");
-		button.setBackground(Color.BLACK);
+		button.setBackground(new Color(59, 89, 182));
+		button.setForeground(Color.WHITE);
+		button.setFocusPainted(false);
+		button.setFont(new Font("Tahoma", Font.BOLD, 12));
 		//button.setForeground(Color.GRAY);
 		button.setBounds(250, 100, 70, 40);
     	add(txt);
@@ -61,13 +65,15 @@ public class UI extends JFrame implements Serializable {
 	public void bAction(JButton button, JTextField txt ,JTextField plyr1) {
 		button.addActionListener(e -> {
 			//your actions
-			//input = Integer.parseInt(txt.getText());
+			input = Integer.parseInt(txt.getText());
 			Player pl = new Player(plyr1.getText());
 			System.out.println(pl.getName());
 			namenSpeichern(pl);
 			//Domain.Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
-			setVisible(false);
+
+			dispose();
+
 		});
 
 	}

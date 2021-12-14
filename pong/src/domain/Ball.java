@@ -4,10 +4,10 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
-import javax.swing.Timer;
+import javax.swing.*;
 
-public class Ball {
-	
+public class Ball  {
+
 	 private int x = 400;
 	 private int y = 200;
 	 private int vely = 3;
@@ -17,14 +17,14 @@ public class Ball {
 	 public static int counterRally = 0;
 	 public static int howManyPoints = 1;
 	 static Color colorChange = Color.WHITE;
-	 
+
 	public void draw(Graphics g) {
 		//draw ball
 		g.fillOval(x, y, 15, 15);
 	}
 	    
 	public void movement(Rectangle P1, Rectangle P2, Timer timer, int in) {
-		
+
 		//collision
 		if(y >= 375){
             vely = -vely;
@@ -67,7 +67,7 @@ public class Ball {
         if(counterP1 == in || counterP2 == in){
             System.exit(1);
         }
-        
+
         
         if(counterRally >= 2) {
         	howManyPoints = 2;
@@ -77,6 +77,14 @@ public class Ball {
         // x and y velocity 
         x = x + velx;
         y = y +vely;
-		
+
 	}
+
+    public  int getCounterP1() {
+        return counterP1;
+    }
+
+    public  int getCounterP2() {
+        return counterP2;
+    }
 }
