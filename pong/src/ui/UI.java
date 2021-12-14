@@ -1,13 +1,6 @@
-package UI;
-
-import pong.Game;
+package ui;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.util.Scanner;
 
 import javax.swing.*;
 
@@ -51,7 +44,7 @@ public class UI extends JFrame {
 		button.addActionListener(e -> {
 			//your actions
 			input = Integer.parseInt(txt.getText());
-			//Game wird nach dem pressen und eingeben aufgerufen
+			//Domain.Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
 			setVisible(false);
 		});

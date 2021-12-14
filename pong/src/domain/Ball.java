@@ -1,4 +1,4 @@
-package pong;
+package domain;
 
 import java.awt.Color;
 import java.awt.Graphics;

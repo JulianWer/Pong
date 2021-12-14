@@ -1,14 +1,13 @@
-package pong;
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+package domain;
+import domain.Panel;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 
-class Key_pressed extends KeyAdapter {
+public class Key_pressed extends KeyAdapter {
 	
 	//obj
-    private Panel panel;
+    private final Panel panel;
     
     //Konstruktor
     public Key_pressed(Panel panel){

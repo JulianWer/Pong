@@ -1,4 +1,7 @@
-package pong;
+package ui;
+
+import domain.Panel;
+import domain.Key_pressed;
 
 import javax.swing.JFrame;
 

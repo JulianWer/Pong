@@ -1,4 +1,5 @@
-package pong;
+package domain;
+
 import javax.swing.JPanel;
 import java.awt.event.*;
 import javax.swing.*;
