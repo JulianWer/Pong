@@ -23,6 +23,7 @@ public class Panel extends JPanel implements ActionListener{
     private static final Color WHITE = Color.WHITE;
     public Panel(int input){
     	this.input = input;
+        this.timer.start();
     }
 
     @Override

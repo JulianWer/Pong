@@ -51,7 +51,7 @@ public class Ball {
             howManyPoints = 1;
             x = 400;
             y= 200;
-            timer.stop();
+            //timer.stop();
         }
         
         if(x <= 0){
@@ -61,7 +61,7 @@ public class Ball {
             howManyPoints = 1;
             x = 400;
             y= 200;
-            timer.stop(); 
+            //timer.stop();
         }
 
         if(counterP1 == in || counterP2 == in){

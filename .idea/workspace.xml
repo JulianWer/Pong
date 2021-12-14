@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="UI fenster verschwinden lassen">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="sortieren mit packages">
+      <change afterPath="$PROJECT_DIR$/pong/src/persistence/PersistenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/src/ui/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/UI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/pong/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/pong/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/api/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/pong/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/pong/keypressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/Key_pressed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Key_pressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Key_pressed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639156441118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sortieren mit packages">
+      <created>1639498172820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639498172821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +138,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="transfer to intellij." />
     <MESSAGE value="changes in UI (format)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in UI (format)" />
+    <MESSAGE value="sortieren mit packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="sortieren mit packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.io.NotSerializableException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pong$Main.ic" NAME="Main Coverage Results" MODIFIED="1639396857432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

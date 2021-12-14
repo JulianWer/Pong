@@ -1,38 +1,56 @@
 package ui;
 
+import persistence.PersistenceService;
+
 import java.awt.*;
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.ArrayList;
 
 import javax.swing.*;
 
-public class UI extends JFrame {
+public class UI extends JFrame implements Serializable {
 
 	private int input;
+	private  PersistenceService ps = new PersistenceService();
 
-	
 	public UI() {
 		this.ask();
 	}
 	
 	public void ask() {
 		getContentPane().setBackground(Color.lightGray);
-
+		try{
+			System.out.println(ps.loadData().getName());
+		} catch (IOException  | ClassNotFoundException e) {
+			System.err.println("nix");
+		}
 		JLabel label = new JLabel("Bis zu welchem Punktestand soll das Spiel gehen?");
 		label.setFont(new Font("SansSerif", Font.PLAIN, 15));
 		label.setBounds(30,50, 400,40);
     	JTextField txt = new JTextField();
+		JTextField plyr1 = new JTextField();
+		JTextField plyr2 = new JTextField();
     	//set size of the text box
     	txt.setBounds(50, 100, 200, 40);
-    	JButton button = new JButton("play");
+		plyr1.setBounds(50, 200, 100, 40);
+		plyr2.setBounds(200, 200, 100, 40);
+
+		JButton button = new JButton("play");
 		button.setBackground(Color.BLACK);
 		//button.setForeground(Color.GRAY);
 		button.setBounds(250, 100, 70, 40);
     	add(txt);
+		add(plyr1);
+		//add(plyr2);
     	add(button);
 		getRootPane().setDefaultButton(button);
 		add(label);
-    	bAction(button,txt);
+    	bAction(button,txt,plyr1);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    	setSize(400,200);
+    	setSize(400,400);
+
+
 
 		setLocationRelativeTo(null);
     	setLayout(null);
@@ -40,13 +58,25 @@ public class UI extends JFrame {
 
 	}
 
-	public void bAction(JButton button, JTextField txt){
+	public void bAction(JButton button, JTextField txt ,JTextField plyr1) {
 		button.addActionListener(e -> {
 			//your actions
-			input = Integer.parseInt(txt.getText());
+			//input = Integer.parseInt(txt.getText());
+			Player pl = new Player(plyr1.getText());
+			System.out.println(pl.getName());
+			namenSpeichern(pl);
 			//Domain.Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
 			setVisible(false);
 		});
+
+	}
+
+	public void namenSpeichern(Player pl){
+		try{
+			ps.playerSave(pl);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
