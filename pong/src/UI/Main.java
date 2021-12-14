@@ -1,8 +1,6 @@
-package pong;
+package UI;
 
-import java.awt.Window;
-
-import javax.swing.JFrame;
+import UI.UI;
 
 
 public class Main{

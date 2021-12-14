@@ -1,4 +1,6 @@
-package pong;
+package UI;
+
+import pong.Game;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

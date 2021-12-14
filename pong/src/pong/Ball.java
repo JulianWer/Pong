@@ -73,7 +73,7 @@ public class Ball {
         	howManyPoints = 2;
         	colorChange = Color.RED;
         }
-        
+
         // x and y velocity 
         x = x + velx;
         y = y +vely;
