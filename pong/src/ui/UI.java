@@ -23,6 +23,7 @@ public class UI extends JFrame implements Serializable {
 		getContentPane().setBackground(Color.lightGray);
 		try{
 			System.out.println(ps.loadData().getName());
+
 		} catch (IOException  | ClassNotFoundException e) {
 			System.err.println("nix");
 		}
@@ -68,13 +69,13 @@ public class UI extends JFrame implements Serializable {
 			input = Integer.parseInt(txt.getText());
 			Player pl = new Player(plyr1.getText());
 			Player pl2 = new Player(plyr2.getText());
+
+			//Domain.Game wird nach dem pressen und eingeben aufgerufen
+			new Game(input);
 			System.out.println(pl.getName());
 			namenSpeichern(pl);
 			System.out.println(pl2.getName());
 			namenSpeichern(pl2);
-			//Domain.Game wird nach dem pressen und eingeben aufgerufen
-			Game win = new Game(input);
-
 			dispose();
 
 		});

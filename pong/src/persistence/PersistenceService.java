@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class PersistenceService {
 
-    public void playerSave(Player arr) throws IOException {
+    public void playerSave(Player arr ) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Spieler.ser"));
         oos.writeObject(arr);
         oos.close();
