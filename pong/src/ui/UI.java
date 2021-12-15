@@ -46,11 +46,11 @@ public class UI extends JFrame implements Serializable {
 		button.setBounds(250, 100, 70, 40);
     	add(txt);
 		add(plyr1);
-		//add(plyr2);
+		add(plyr2);
     	add(button);
 		getRootPane().setDefaultButton(button);
 		add(label);
-    	bAction(button,txt,plyr1);
+    	bAction(button,txt,plyr1,plyr2);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	setSize(400,400);
 
@@ -62,13 +62,16 @@ public class UI extends JFrame implements Serializable {
 
 	}
 
-	public void bAction(JButton button, JTextField txt ,JTextField plyr1) {
+	public void bAction(JButton button, JTextField txt ,JTextField plyr1,JTextField plyr2 ) {
 		button.addActionListener(e -> {
 			//your actions
 			input = Integer.parseInt(txt.getText());
 			Player pl = new Player(plyr1.getText());
+			Player pl2 = new Player(plyr2.getText());
 			System.out.println(pl.getName());
 			namenSpeichern(pl);
+			System.out.println(pl2.getName());
+			namenSpeichern(pl2);
 			//Domain.Game wird nach dem pressen und eingeben aufgerufen
 			Game win = new Game(input);
 

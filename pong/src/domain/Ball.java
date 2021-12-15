@@ -80,11 +80,4 @@ public class Ball  {
 
 	}
 
-    public  int getCounterP1() {
-        return counterP1;
-    }
-
-    public  int getCounterP2() {
-        return counterP2;
-    }
 }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="Spieler speichern">
-      <change afterPath="$PROJECT_DIR$/Spieler.ser" afterDir="false" />
+    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="Verbesserungen bei Fenstern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spieler.ser" beforeDir="false" afterPath="$PROJECT_DIR$/Spieler.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/domain/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/domain/Key_pressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Key_pressed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/domain/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Panel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/ui/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/UI.java" afterDir="false" />
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639503041459</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Verbesserungen bei Fenstern">
+      <created>1639509917525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639509917525</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +157,8 @@
     <MESSAGE value="changes in UI (format)" />
     <MESSAGE value="sortieren mit packages" />
     <MESSAGE value="Spieler speichern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spieler speichern" />
+    <MESSAGE value="Verbesserungen bei Fenstern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verbesserungen bei Fenstern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
