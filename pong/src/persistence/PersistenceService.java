@@ -1,9 +1,9 @@
 package persistence;
 
-import ui.Player;
-
 import java.io.*;
 import java.util.ArrayList;
+
+import gui.Player;
 
 public class PersistenceService {
 

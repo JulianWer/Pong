@@ -1,4 +1,4 @@
-package ui;
+package gui;
 
 import domain.Ball;
 import persistence.PersistenceService;
