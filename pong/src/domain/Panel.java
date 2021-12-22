@@ -33,17 +33,35 @@ public class Panel extends JPanel implements ActionListener{
     	//drawing the game
 
         this.setBackground(BLACK);
+        drawDashedLine(g, 400, 0, 400, 400);
         g.setColor(WHITE);
         g.fillRect(P1.x, P1.y, 20, 100);
         g.fillRect(P2.x, P2.y, 20, 100);
         g.setColor(Ball.colorChange);
         ball.draw(g);
         g.setColor(WHITE);
-        g.setFont(new Font("SansSerif", Font.PLAIN, 20));
+        g.setFont(new Font("Arial", Font.BOLD, 35));
         g.drawString(String.valueOf(Ball.counterP1), 200, 100);
         g.drawString(String.valueOf(Ball.counterP2), 600, 100);
 
     }
+    
+    public void drawDashedLine(Graphics g, int x1, int y1, int x2, int y2){
+
+    	  // Create a copy of the Graphics instance
+    	  Graphics2D g2 = (Graphics2D) g.create();
+    	  g2.setColor(WHITE);
+    	  // Set the stroke of the copy, not the original 
+    	  Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL,
+    	                                  0, new float[]{9}, 0);
+    	  g2.setStroke(dashed);
+
+    	  // Draw to the copy
+    	  g2.drawLine(x1, y1, x2, y2);
+
+    	  // Get rid of the copy
+    	  g2.dispose();
+    	}
 
 	//Player movement
     public void moveUpP1(){
