@@ -10,10 +10,12 @@ public class Game extends  JFrame{
 
 	public Game(int input) {
 		this.game(input);
+		
 	}
 
 
 	public void game(int input) {
+		
     	setTitle("Pong game");
 		Panel panel = new Panel(input);
 		addKeyListener(new Key_pressed(panel));

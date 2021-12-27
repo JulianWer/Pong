@@ -1,7 +1,12 @@
 package domain;
 
 import javax.swing.JPanel;
+
+import persistence.PersistenceService;
+
 import java.awt.event.*;
+import java.io.IOException;
+
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -14,6 +19,7 @@ public class Panel extends JPanel implements ActionListener{
 	//Objects
     private Rectangle P1 = new Rectangle(20,200,30,100);
     private Rectangle P2 = new Rectangle(750,200,30,100);
+    private  PersistenceService ps = new PersistenceService();
     public Timer timer = new Timer(10,this);
     private final Ball ball = new Ball();
     
@@ -40,9 +46,19 @@ public class Panel extends JPanel implements ActionListener{
         g.setColor(Ball.colorChange);
         ball.draw(g);
         g.setColor(WHITE);
-        g.setFont(new Font("Arial", Font.BOLD, 35));
+        g.setFont(new Font("Tahoma", Font.BOLD, 35));
         g.drawString(String.valueOf(Ball.counterP1), 200, 100);
         g.drawString(String.valueOf(Ball.counterP2), 600, 100);
+        g.setFont(new Font("Tahoma", Font.BOLD, 15));
+        
+        try {
+			g.drawString(ps.loadData().get(1).getName(), 20, 20);
+			g.drawString(ps.loadData().get(0).getName(), 750, 20);
+		} catch (ClassNotFoundException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
 
     }
     

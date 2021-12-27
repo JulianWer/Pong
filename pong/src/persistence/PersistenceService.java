@@ -7,15 +7,16 @@ import gui.Player;
 
 public class PersistenceService {
 
-    public void playerSave(Player arr ) throws IOException {
+    public void playerSave(ArrayList<Player> arr ) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Spieler.ser"));
         oos.writeObject(arr);
         oos.close();
     }
 
-    public Player loadData() throws IOException, ClassNotFoundException {
+    public ArrayList<Player> loadData() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Spieler.ser"));
-        Player pl = (Player) ois.readObject();
+        @SuppressWarnings("unchecked")
+		ArrayList<Player> pl = (ArrayList<Player>) ois.readObject();
         return pl;
     }
 }
