@@ -12,4 +12,8 @@ public class Player implements Serializable {
     public String getName() {
         return name;
     }
+
+    public boolean equals(Player p){
+        return p.getName().equals(this.name);
+    }
 }
