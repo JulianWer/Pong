@@ -1,5 +1,4 @@
-package domain;
-import domain.Panel;
+package gui;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;

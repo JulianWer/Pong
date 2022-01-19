@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="player 2">
+    <list default="true" id="54a4b6a5-a03d-4152-9640-b787a75f7ed4" name="Changes" comment="add Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spieler.ser" beforeDir="false" afterPath="$PROJECT_DIR$/Spieler.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/Spieler.ser" beforeDir="false" afterPath="$PROJECT_DIR$/pong/Spieler.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/pong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pong/pong.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Key_pressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/gui/Key_pressed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/domain/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/gui/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/gui/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/gui/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/gui/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/domain/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/gui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/gui/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/src/persistence/PersistenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/persistence/PersistenceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/src/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/ui/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/src/persistence/PersistenceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pong/src/persistence/PersistenceServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,18 +44,46 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="persistence" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="pong" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="pong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,8 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersistenceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.PersistenceServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="JUnit.PersistenceServiceTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -142,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639559301078</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Loading fix">
+      <created>1642598776930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642598776930</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add Test">
+      <created>1642600522243</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642600522243</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +232,9 @@
     <MESSAGE value="Spieler speichern" />
     <MESSAGE value="Verbesserungen bei Fenstern" />
     <MESSAGE value="player 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="player 2" />
+    <MESSAGE value="Loading fix" />
+    <MESSAGE value="add Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -173,12 +243,19 @@
           <properties class="java.io.NotSerializableException" package="java.io" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pong$Main.ic" NAME="Main Coverage Results" MODIFIED="1639396857432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pong.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/pong$PersistenceServiceTest.ic" NAME="PersistenceServiceTest Coverage Results" MODIFIED="1642600225429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
     </SUITE>
   </component>
 </project>

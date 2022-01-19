@@ -16,7 +16,7 @@ public class Ball  {
 	 public static int counterP2 = 0;
 	 public static int counterRally = 0;
 	 public static int howManyPoints = 1;
-	 static Color colorChange = Color.WHITE;
+	 public static Color colorChange = Color.WHITE;
 
 	public void draw(Graphics g) {
 		//draw ball

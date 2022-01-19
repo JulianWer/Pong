@@ -1,7 +1,8 @@
-package domain;
+package gui;
 
 import javax.swing.JPanel;
 
+import domain.Ball;
 import persistence.PersistenceService;
 
 import java.awt.event.*;

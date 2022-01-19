@@ -1,9 +1,5 @@
 package gui;
 
-import domain.Ball;
-import domain.Panel;
-import domain.Key_pressed;
-
 import javax.swing.JFrame;
 
 public class Game extends  JFrame{

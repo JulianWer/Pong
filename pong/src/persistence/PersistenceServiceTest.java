@@ -1,9 +1,8 @@
 package persistence;
 
-import gui.Player;
+import domain.Player;
 import org.junit.jupiter.api.*;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,5 +1,6 @@
 package gui;
 
+import domain.Player;
 import persistence.PersistenceService;
 
 import java.awt.*;

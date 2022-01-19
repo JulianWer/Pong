@@ -3,7 +3,7 @@ package persistence;
 import java.io.*;
 import java.util.ArrayList;
 
-import gui.Player;
+import domain.Player;
 
 public class PersistenceService {
 
