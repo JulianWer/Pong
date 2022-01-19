@@ -23,10 +23,7 @@ public class UI extends JFrame implements Serializable {
 	}
 	
 	public void ask() throws ClassNotFoundException, IOException {
-	
-		
-		
-		
+
     	JTextField txt = new JTextField();
     	txt.setBounds(50, 350, 200, 40);
     	JTextField plyr1 = new JTextField();
@@ -80,7 +77,13 @@ public class UI extends JFrame implements Serializable {
 	public void bAction(JButton button, JTextField txt ,JTextField plyr1,JTextField plyr2 ) {
 		button.addActionListener(e -> {
 			//your actions
-			input = Integer.parseInt(txt.getText());
+			try {
+				input = Integer.parseInt(txt.getText());
+			}catch (Exception ex){
+				System.out.println("Error: " +ex);
+				System.out.println("Set default win score! (10)");
+				input = 10;
+			}
 			Player pl = new Player(plyr1.getText());
 			Player pl2 = new Player(plyr2.getText());
 

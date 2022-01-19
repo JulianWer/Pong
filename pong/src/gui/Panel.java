@@ -103,7 +103,7 @@ public class Panel extends JPanel implements ActionListener{
     
     //animation of the ball
     public void actionPerformed(ActionEvent e) {
-        ball.movement(P1, P2, timer, this.input);
+        ball.movement(P1, P2,this.input);
         repaint();
     }
 
