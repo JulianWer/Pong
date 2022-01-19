@@ -6,6 +6,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.lang.*;
 
 import javax.swing.*;
 
@@ -43,7 +44,11 @@ public class UI extends JFrame implements Serializable {
 		
 		
 		add(createLabel("PONG", 150, 20, 400, 40,30));
-		add(createLabel("Leztes Spiel: " + ps.loadData().get(1).getName() + ", " + ps.loadData().get(0).getName(), 30, 100, 400, 40,15));
+		try {
+			add(createLabel("Leztes Spiel: " + ps.loadData().get(1).getName() + ", " + ps.loadData().get(0).getName(), 30, 100, 400, 40, 15));
+		}catch(Exception e ) {
+			System.out.println("Konnte namen nicht laden. error : " + e);
+		}
 		add(createLabel("Player 1" ,70, 170, 100, 40,15));
 		add(createLabel("Player 2" ,220, 170, 100, 40,15));
     	add(txt);
