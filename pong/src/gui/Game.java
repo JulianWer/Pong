@@ -6,9 +6,7 @@ public class Game extends  JFrame{
 
 	public Game(int input) {
 		this.game(input);
-		
 	}
-
 
 	public void game(int input) {
 		

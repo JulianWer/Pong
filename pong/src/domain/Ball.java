@@ -12,10 +12,7 @@ public class Ball  extends Rectangle{
 	 private static int y = 200;
      private static int vely = 3;
 	 private static int velx = 3;
-
-
-
-    public static int counterP1 = 0;
+     public static int counterP1 = 0;
 	 public static int counterP2 = 0;
 	 public static int counterRally = 0;
 	 public static int howManyPoints = 1;
@@ -23,13 +20,6 @@ public class Ball  extends Rectangle{
      static Rectangle ball ;
 
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
 	public void draw(Graphics g) {
 		//draw ball
 		g.fillOval(x, y, 15, 15);
@@ -50,7 +40,7 @@ public class Ball  extends Rectangle{
 
 	}
 
-    public static void collision(Rectangle P1, Rectangle P2){
+    private static void collision(Rectangle P1, Rectangle P2){
         if(y >= 375){
             vely = -vely;
         }
@@ -69,7 +59,7 @@ public class Ball  extends Rectangle{
         }
     }
 
-    public  void extras(int in){
+    private void extras(int in){
         if(x >= 800){
             counterP1 += howManyPoints;
             counterRally = 0;

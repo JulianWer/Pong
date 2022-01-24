@@ -22,7 +22,7 @@ public class UI extends JFrame implements Serializable {
 		this.ask();
 	}
 	
-	public void ask() throws ClassNotFoundException, IOException {
+	private void ask() throws ClassNotFoundException, IOException {
 
     	JTextField txt = new JTextField();
     	txt.setBounds(50, 350, 200, 40);
@@ -78,7 +78,7 @@ public class UI extends JFrame implements Serializable {
 
 	}
 	
-	public JLabel createLabel(String input,int x ,int y, int w, int h, int tall) {
+	private JLabel createLabel(String input,int x ,int y, int w, int h, int tall) {
 		JLabel label = new JLabel(input) ;
 		label.setForeground(Color.BLACK);
 		label.setFont(new Font("Arial", Font.PLAIN, tall));
@@ -86,7 +86,7 @@ public class UI extends JFrame implements Serializable {
 		return label;
 	}
 
-	public void bAction(JButton button, JTextField txt ,JTextField plyr1,JTextField plyr2 ) {
+	private void bAction(JButton button, JTextField txt ,JTextField plyr1,JTextField plyr2 ) {
 		button.addActionListener(e -> {
 			//your actions
 			try {
@@ -111,7 +111,7 @@ public class UI extends JFrame implements Serializable {
 
 	}
 
-	public void namenSpeichern(){
+	private void namenSpeichern(){
 		try{
 			ps.playerSave(players);
 		} catch (IOException e) {

@@ -63,7 +63,7 @@ public class Panel extends JPanel implements ActionListener{
 
     }
     
-    public void drawDashedLine(Graphics g, int x1, int y1, int x2, int y2){
+    private void drawDashedLine(Graphics g, int x1, int y1, int x2, int y2){
 
     	  // Create a copy of the Graphics instance
     	  Graphics2D g2 = (Graphics2D) g.create();
